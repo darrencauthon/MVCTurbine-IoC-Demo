@@ -1,0 +1,22 @@
+No Dependencies
+Hiro:  60-75
+StructureMap:  150-190
+Unity: 230-250
+Windsor: 3200-3400
+Ninject: 1900-2200
+
+
+Few Dependencies:
+Hiro:  4-6 
+StructureMap: 90-105
+Unity: 150-175
+Windsor: 750-850
+Ninject: 800-1000
+
+
+Many Dependencies:
+Hiro: 7-15
+StructureMap: 125-155
+Unity: 1800-2000
+Windsor: 6400-6800
+Ninject: 8000-9000
