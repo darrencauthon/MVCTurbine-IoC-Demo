@@ -1,8 +1,29 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
 <h2>@ViewBag.Message</h2>
 <p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+    This site provides a quick way to demo different IoC containers in MVC Turbine.
 </p>
+<p>
+    To try one out, just open up global.asax and uncomment out the container you want
+    to work with. It has support for <b>StructureMap</b>, <b>Unity</b>, <b>Windsor</b>,
+    <b>Ninject</b>, and <b>Hiro</b> (unofficially, Hiro support is brand-new).
+</p>
+<pre>
+    //ServiceLocatorManager.SetLocatorProvider(() => new HiroServiceLocator());
+    //ServiceLocatorManager.SetLocatorProvider(() => new StructureMapServiceLocator());
+    //ServiceLocatorManager.SetLocatorProvider(() => new UnityServiceLocator());
+    //ServiceLocatorManager.SetLocatorProvider(() => new WindsorServiceLocator());
+    //ServiceLocatorManager.SetLocatorProvider(() => new NinjectServiceLocator());
+    </pre>
+<p>
+    I have three samples set up:
+</p>
+<ul>
+    <li>No dependencies: A controller that has no dependencies. (100,000 times)</li>
+    <li>A few simple dependencies: A controller that has few simple dependencies. (10,000
+        times)</li>
+    <li>Many deep dependencies: A controller that has many dependencies that are pretty
+        deep. (1,000 times)</li>
+</ul>

@@ -6,6 +6,10 @@ namespace MvcTurbine_IoC_Demo.Controllers
 {
     public class NoDependenciesController : Controller
     {
+        public NoDependenciesController()
+        {
+        }
+
         public ActionResult Index()
         {
             var locator = ServiceLocatorManager.Current;
@@ -17,7 +21,8 @@ namespace MvcTurbine_IoC_Demo.Controllers
                 locator.Resolve<NoDependenciesController>();
             stopwatch.Stop();
 
-            ViewBag.Message = string.Format("Creating {0} instances took {1}  milliseconds.", limit, stopwatch.ElapsedMilliseconds);
+            var name = locator.GetType().Name.Replace("ServiceLocator", "");
+            ViewBag.Message = string.Format("Creating {0} instances with {2} took {1} milliseconds.", limit, stopwatch.ElapsedMilliseconds, name);
 
             return View();
         }

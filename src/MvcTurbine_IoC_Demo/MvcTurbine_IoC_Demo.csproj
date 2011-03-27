@@ -33,16 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core">
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\windsor\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.DynamicProxy2">
-      <HintPath>..\..\lib\windsor\Castle.DynamicProxy2.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.MicroKernel">
-      <HintPath>..\..\lib\windsor\Castle.MicroKernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Windsor">
+    <Reference Include="Castle.Windsor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\windsor\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="Hiro">
@@ -72,10 +68,12 @@
     <Reference Include="MvcTurbine.Hiro">
       <HintPath>..\..\lib\hiro\MvcTurbine.Hiro.dll</HintPath>
     </Reference>
-    <Reference Include="MvcTurbine.Ninject">
+    <Reference Include="MvcTurbine.Ninject, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\ninject\MvcTurbine.Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="MvcTurbine.StructureMap">
+    <Reference Include="MvcTurbine.StructureMap, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\structuremap\MvcTurbine.StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="MvcTurbine.Unity">
@@ -84,16 +82,19 @@
     <Reference Include="MvcTurbine.Web">
       <HintPath>..\..\lib\mvcturbine\MvcTurbine.Web.dll</HintPath>
     </Reference>
-    <Reference Include="MvcTurbine.Windsor">
+    <Reference Include="MvcTurbine.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\windsor\MvcTurbine.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="NGenerics">
       <HintPath>..\..\lib\hiro\NGenerics.dll</HintPath>
     </Reference>
-    <Reference Include="Ninject">
+    <Reference Include="Ninject, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\ninject\Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap">
+    <Reference Include="StructureMap, Version=2.6.1.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\structuremap\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -123,7 +124,6 @@
     <Compile Include="Controllers\ManyDeepDependenciesController.cs" />
     <Compile Include="Controllers\NoDependenciesController.cs" />
     <Compile Include="SampleClasses.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
