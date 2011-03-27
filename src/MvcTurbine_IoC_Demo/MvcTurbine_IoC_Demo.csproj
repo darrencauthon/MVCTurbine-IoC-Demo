@@ -33,33 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core">
-      <HintPath>..\..\lib\windsor\Castle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.DynamicProxy2">
-      <HintPath>..\..\lib\windsor\Castle.DynamicProxy2.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.MicroKernel">
-      <HintPath>..\..\lib\windsor\Castle.MicroKernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Windsor">
-      <HintPath>..\..\lib\windsor\Castle.Windsor.dll</HintPath>
-    </Reference>
     <Reference Include="Hiro">
       <HintPath>..\..\lib\hiro\Hiro.dll</HintPath>
     </Reference>
     <Reference Include="Hiro.Containers">
       <HintPath>..\..\lib\hiro\Hiro.Containers.dll</HintPath>
     </Reference>
+    <Reference Include="LinFu.Finders">
+      <HintPath>..\..\lib\hiro\LinFu.Finders.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\unity\Microsoft.Practices.ServiceLocation.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\unity\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>..\..\lib\hiro\Mono.Cecil.dll</HintPath>
     </Reference>
@@ -69,29 +52,11 @@
     <Reference Include="MvcTurbine.Hiro">
       <HintPath>..\..\lib\hiro\MvcTurbine.Hiro.dll</HintPath>
     </Reference>
-    <Reference Include="MvcTurbine.Ninject">
-      <HintPath>..\..\lib\ninject\MvcTurbine.Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcTurbine.StructureMap">
-      <HintPath>..\..\lib\structuremap\MvcTurbine.StructureMap.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcTurbine.Unity">
-      <HintPath>..\..\lib\unity\MvcTurbine.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="MvcTurbine.Web">
       <HintPath>..\..\lib\mvcturbine\MvcTurbine.Web.dll</HintPath>
     </Reference>
-    <Reference Include="MvcTurbine.Windsor">
-      <HintPath>..\..\lib\windsor\MvcTurbine.Windsor.dll</HintPath>
-    </Reference>
     <Reference Include="NGenerics">
       <HintPath>..\..\lib\hiro\NGenerics.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject">
-      <HintPath>..\..\lib\ninject\Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap">
-      <HintPath>..\..\lib\structuremap\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages" />

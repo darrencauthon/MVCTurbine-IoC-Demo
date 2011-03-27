@@ -361,7 +361,7 @@
 
     public class Tuna : ITuna
     {
-        public Tuna(Fish fish, IFisherman fisherman, IBoat boat)
+        public Tuna(IFish fish, IFisherman fisherman, IBoat boat)
         {
         }
     }

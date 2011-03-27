@@ -6,6 +6,14 @@ using MvcTurbine.ComponentModel;
 
 namespace MvcTurbine_IoC_Demo.Registration
 {
+    public class Testing1 : IServiceRegistration
+    {
+        public void Register(IServiceLocator locator)
+        {
+            
+        }
+    }
+
     public class DefaultRegistration : IServiceRegistration
     {
         private readonly Assembly assembly;
@@ -47,6 +55,7 @@ namespace MvcTurbine_IoC_Demo.Registration
         {
             return assembly
                 .GetTypes().Where(x => x.IsInterface)
+                .Where(x=>x.Namespace == "MvcTurbine_IoC_Demo")
                 .ToList();
         }
     }

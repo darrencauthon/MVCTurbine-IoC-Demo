@@ -1,16 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Diagnostics;
 using System.Web.Mvc;
+using MvcTurbine.ComponentModel;
 
 namespace MvcTurbine_IoC_Demo.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController(IPepe pepe, IBigJohn bigJohn, ITotallyTuna totallyTuna, ITurkeyTom turkeyTom, IVito vito, IVegetarian vegetarian, IJjblt jjblt)
+        {
+        }
+
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
+            var locator = ServiceLocatorManager.Current;
+            var limit = 1000;
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            for (var index = 0; index < limit; index++)
+                locator.Resolve<HomeController>();
+            stopwatch.Stop();
+
+            ViewBag.Message = string.Format("Creating {0} instances took {1}.", limit, stopwatch.ElapsedMilliseconds);
 
             return View();
         }
